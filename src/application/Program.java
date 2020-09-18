@@ -13,6 +13,8 @@ public class Program {
 	Department obj = new Department(1,"books");
 	
 	SellerDao sellerDao  = DaoFactory.createSellerDao();
+	
+	System.out.println("#######TESTE NUMERO 1: SELLER FIND BY ID######");
 	Seller seller = sellerDao.findById(3);
 	
 	System.out.println(seller);
