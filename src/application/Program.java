@@ -37,6 +37,27 @@ public class Program {
 	for(Seller ls : list) {
 		System.out.println(ls);
 	}
+	
+	System.out.println("#######TESTE NUMERO 4: INSERT SELLER");
+	
+	Seller a1 = new Seller( 4, "gregorio","greg@gmail.com",new Date(), 4000.0, dep);
+	sellerDao.insert(a1);
+	System.out.println("Inserted" + a1.getId());
+	
+	
+	
+	
+	
+	System.out.println("#######TESTE NUMERO 5: UPDATE SELLER");
+	
+	 seller = sellerDao.findById(1);
+	 seller.setName("Martha suplicy");
+	 sellerDao.update(seller);
+	 
+	 System.out.println("updated");	
+	
+	
+	
 	}
 
 }
