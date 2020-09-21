@@ -38,11 +38,11 @@ public class Program {
 		System.out.println(ls);
 	}
 	
-	System.out.println("#######TESTE NUMERO 4: INSERT SELLER");
+	/*System.out.println("#######TESTE NUMERO 4: INSERT SELLER");
 	
 	Seller a1 = new Seller( 4, "gregorio","greg@gmail.com",new Date(), 4000.0, dep);
 	sellerDao.insert(a1);
-	System.out.println("Inserted" + a1.getId());
+	System.out.println("Inserted" + a1.getId()); */
 	
 	
 	
@@ -56,6 +56,14 @@ public class Program {
 	 
 	 System.out.println("updated");	
 	
+	 
+		
+		System.out.println("#######TESTE NUMERO 6: DELETE SELLER");
+		
+		sellerDao.deleteById(10);
+		
+		
+		 System.out.println("DELETED!");	
 	
 	
 	}
